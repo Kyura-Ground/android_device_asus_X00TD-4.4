@@ -19,4 +19,5 @@
 <resources>
     <!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">ZenFone Max Pro M1</string>
+    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,2097152,262144,524288,1048576</string>
 </resources>
