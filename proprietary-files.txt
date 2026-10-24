@@ -66,8 +66,8 @@ vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc2.so|21b308e0c901c94a1647f8d194f74635918e6943|fa530ddf7aff3998c5b028b9895a0b3c04b62a91
+vendor/lib/libmmcamera_faceproc.so|bff36589f38f4a4447f7a9543aa6b4b7045cf825|64714763a54180e1c281a0ea642c35c2d2a94885
 vendor/lib/libmmcamera_gc5025_ofilm_13m.so
 vendor/lib/libmmcamera_gc5025_ofilm_13m_fm24c64d_eeprom.so
 vendor/lib/libmmcamera_gc5025_ofilm_16m.so
