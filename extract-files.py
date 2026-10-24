@@ -34,7 +34,7 @@ blob_fixups: blob_fixups_user_type = {
     'product/etc/permissions/qti_fingerprint_interface.xml': blob_fixup()
         .regex_replace('/system/framework/', '/system/product/framework/'),
     'vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service_asus.rc': blob_fixup()
-        .regex_replace('android.hardware.biometrics.fingerprint@2.1-service', 'android.hardware.biometrics.fingerprint@2.1-service_asus'),
+        .regex_replace(r'android\.hardware\.biometrics\.fingerprint@2\.1-service(?=\s|$)', 'android.hardware.biometrics.fingerprint@2.1-service_asus'),
     'vendor/lib64/hw/cdfinger.fingerprint.default.so': blob_fixup()
         .add_needed('liblog.so'),
     'vendor/lib/hw/camera.sdm660.so': blob_fixup()
