@@ -651,8 +651,8 @@ vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.sdm660.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libqfp-service.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|3f693aa75cc9043f9182ec0be2083229fa5c3df6|d57d5c201879477737621b821f1e969c8edd9b62
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|647a6c0451cc0e1b54e62b647d0e217bdc6b0ef4|1087a642101bf7f1586acc360fb94ec99c4666a3
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # GPU firmware
