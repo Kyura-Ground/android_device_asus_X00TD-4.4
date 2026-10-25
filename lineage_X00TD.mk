@@ -9,7 +9,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff
+# AxionOS device information (4 GB / 13 MP camera variant).
+AXION_CAMERA_REAR_INFO := 13,5
+AXION_CAMERA_FRONT_INFO := 8
+AXION_MAINTAINER := ikwfahmi
+AXION_PROCESSOR := Snapdragon_636
+
+# Retain the device Power HAL and expose only supported hardware features.
+TARGET_DISABLE_EPPE := true
+TARGET_DISABLES_LIBPERF := false
+HBM_SUPPORTED := false
+BYPASS_CHARGE_SUPPORTED := false
+
+# Inherit common AxionOS phone configuration after setting its flags.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from X00TD device
