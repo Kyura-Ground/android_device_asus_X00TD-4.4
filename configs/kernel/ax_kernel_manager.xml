@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read frequency tables from the X00TD kernel instead of hardcoding another SoC's clocks. -->
+<kernel-manager>
+    <cpu
+        id="little"
+        group="Little Cluster"
+        cpuIds="0-3"
+        minId="axion_min_freq"
+        maxId="axion_max_freq"
+        governorId="little_cpu_governor"
+        node="/sys/devices/system/cpu/cpufreq/policy0" />
+
+    <cpu
+        id="big"
+        group="Big Cluster"
+        cpuIds="4-7"
+        minId="axion_min_freq_big"
+        maxId="axion_max_freq_big"
+        governorId="big_cpu_governor"
+        node="/sys/devices/system/cpu/cpufreq/policy4" />
+
+    <gpu
+        node="/sys/class/kgsl/kgsl-3d0/devfreq"
+        currentNode="/sys/class/kgsl/kgsl-3d0/gpuclk"
+        usageNode="/sys/class/kgsl/kgsl-3d0/gpu_busy_percentage"
+        availablePath="/sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies"
+        frequencyMultiplier="1" />
+</kernel-manager>
