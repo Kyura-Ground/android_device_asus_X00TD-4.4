@@ -4,6 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Set ROM options before inheriting the vendor configuration.
+WITH_GMS := false
+BUILD_BCR := false
+TARGET_ENABLE_BLUR := false
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
