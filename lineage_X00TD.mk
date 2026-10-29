@@ -30,6 +30,4 @@ PRODUCT_MANUFACTURER := asus
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="sdm660_64-user 8.1.0 OPM1 1309 release-keys" \
-    BuildFingerprint=asus/WW_X00TD/ASUS_X00T_2:8.1.0/OPM1/15.2016.1805.318-20180712:user/release-keys \
     DeviceProduct=ASUS_X00T
