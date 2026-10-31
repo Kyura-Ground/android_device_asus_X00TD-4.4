@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2026 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="lunaris_device_message" translatable="false">Asus ZenFone Max Pro M1 (X00TD)</string>
+    <string name="lunaris_processor_code_message" translatable="false">Qualcomm Snapdragon 636</string>
+    <string name="lunaris_battery_type_message" translatable="false">5000 mAh Li-Po</string>
+    <string name="lunaris_screen_message" translatable="false">5.99-inch IPS LCD, 1080 × 2160, 60 Hz</string>
+</resources>
