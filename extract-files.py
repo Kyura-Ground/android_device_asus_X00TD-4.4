@@ -63,7 +63,10 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('__aeabi_memset')
         .clear_symbol_version('__gnu_Unwind_Find_exidx'),
     'vendor/lib64/hw/cdfinger.fingerprint.default.so': blob_fixup()
-        .add_needed('liblog.so'),
+        .add_needed('liblog.so')
+        # Terminate token field and HMAC formats without moving ELF offsets.
+        .binary_regex_replace(rb'h(?=at->\w+\[0x%)', b'\x00')
+        .binary_regex_replace(rb'\[(?=0x%02x\] \[0x%02x\])', b'\x00'),
     'vendor/lib/hw/camera.sdm660.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
     ('vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so', 'vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so'): blob_fixup()
