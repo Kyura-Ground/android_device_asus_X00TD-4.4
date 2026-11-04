@@ -24,5 +24,8 @@ TARGET_KERNEL_CONFIG := \
     X00TD_defconfig \
     vendor/extra/ksu.config
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Inherit the proprietary files
 include vendor/asus/X00TD/BoardConfigVendor.mk
