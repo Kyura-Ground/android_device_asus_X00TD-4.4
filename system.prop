@@ -1,0 +1,6 @@
+# About Phone Definitions
+ro.product.marketname=Asus Zenfone Max Pro M1
+ro.infinity.soc=Snapdragon® 636
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080 x 2160, 60 Hz
+ro.infinity.camera=13MP + 5MP + 8MP
